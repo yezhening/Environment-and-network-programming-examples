@@ -24,7 +24,7 @@
 
 - 一次自动通信
 
-多进程版（目录：multiprocess）
+多进程版：multiprocess
 
 - 使用传输控制协议（TCP）
 
