@@ -1,0 +1,8 @@
+one.png：正常情况，服务端表现
+two.png：正常情况，客户端1表现
+three.png：正常情况，客户端2表现
+four.png：正常情况，客户端3表现
+five.png：服务端终止，服务端表现
+six.png：服务端终止，客户端表现
+seven.png：客户端终止连接，服务端表现
+eight.png：客户端终止连接，客户端表现
