@@ -1,0 +1,16 @@
+图片内容：
+server.png：服务端表现
+client_select.png：客户端client_select表现
+client_poll.png：客户端client_poll表现
+client_epoll.png：客户端client_epoll表现
+
+操作时序：
+1.启动服务端
+2.启动client_select，发送消息"client_select"
+3.启动client_poll，发送消息"client_poll"
+4.启动client_epoll，发送消息"client_epoll"
+
+5.客户端client_select，使用Ctrl+C异常终止
+6.客户端client_poll，使用Ctrl+D正常终止
+7.服务端，使用Ctrl+C异常终止
+8.客户端client_epoll，被迫终止
