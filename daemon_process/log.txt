@@ -1,0 +1,12 @@
+The server runs at: 0.0.0.0:6000. The process id is: 9949
+The process 10064 accept the connection: 127.0.0.1:40476
+From 127.0.0.1:40476 received message: client_select
+The process 10151 accept the connection: 127.0.0.1:40490
+From 127.0.0.1:40490 received message: client_poll
+The process 10241 accept the connection: 127.0.0.1:40504
+From 127.0.0.1:40504 received message: .client_epoll
+From 127.0.0.1:40476 received the end of file
+The child process terminated: 10064
+From 127.0.0.1:40490 received the end of file
+The child process terminated: 10151
+From 127.0.0.1:40504 received message: client_epoll2

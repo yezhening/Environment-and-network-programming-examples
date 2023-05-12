@@ -1,0 +1,26 @@
+图片内容：
+server.png：服务端表现
+client_select.png：客户端client_select表现
+client_poll.png：客户端client_poll表现
+client_epoll.png：客户端client_epoll表现
+logtxt：log.txt文件内容
+
+操作时序：
+1. make clean：清理文件
+2. make all：生成文件
+3. cd bin：切换到二进制文件目录
+
+4. ./server： 启动服务端
+5. ps -ef | grep -w "./server" | grep -v grep：查看服务端进程（服务端父进程9949作为后台守护进程启动；此时无客户端连接，所以无服务端子进程）
+
+6. ./client_select：启动客户端client_select，发送消息"client_select"
+7. ./client_client_poll：启动客户端client_poll，发送消息"client_poll"
+8. ./client_epoll：启动client_epoll，发送消息"client_epoll"
+
+9. Ctrl+C：使客户端client_select异常终止
+10. Ctrl+D：使客户端client_poll正常终止
+
+11. kill 9949：终止服务端父进程9949
+12.  ps -ef | grep -w "./server" | grep -v grep：查看服务端进程（服务端父进程9949终止；服务端子进程10241仍与客户端client_epoll连接）
+13. 客户端client_epoll，发送消息"client_epoll2"，能够正常通信
+14. kill 10241：终止服务端子进程10241，客户端client_epoll被迫终止
