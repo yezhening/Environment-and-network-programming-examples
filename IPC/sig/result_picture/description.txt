@@ -1,0 +1,7 @@
+图片内容：
+receiver.png：接收端输出结果
+sender.png：发送端输出结果
+
+操作时序：
+1. ./receiver：运行接收端
+2. ./sender：运行发送端

@@ -1,0 +1,7 @@
+图片内容：
+process1.png：进程1输出结果
+process2.png：进程2输出结果
+
+操作时序：
+1. ./process1：运行进程1
+2. ./process2：运行进程2

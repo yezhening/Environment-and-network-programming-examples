@@ -1,0 +1,7 @@
+图片内容：
+server.png：服务端输出结果
+client.png：客户端输出结果
+
+操作时序：
+1. ./server：运行服务端
+2. ./client：运行客户端

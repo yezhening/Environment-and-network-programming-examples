@@ -1,0 +1,7 @@
+图片内容：
+writer.png：写端输出结果
+reader.png：读端输出结果
+
+操作时序：
+1. ./writer：运行写端
+2. ./reader：运行读端
